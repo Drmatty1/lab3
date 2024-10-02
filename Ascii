@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+   printf("Enter Numeric Code\n");
+   int a;
+   scanf("%d",&a);
+   printf("Ascii of %d code = %c",a,a);
+
+    return 0;
+}
