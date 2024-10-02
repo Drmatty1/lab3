@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int t,f,h;
+    printf("Enter the Number of Notes available of 10  50  100\n");
+    scanf("%d\n %d\n %d",&t,&f,&h);
+   printf("Enter Amount \n");
+   int a;
+   scanf("%d",&a);
+   if(a<=100*h)
+   {
+     printf("100s = %d\n",a/100);
+   }
+   else if(a<=100*h+50*f)
+   {
+       printf("100s = %d\n",h);
+        printf("50s = %d\n",(a-100*h)/50);
+   }
+     else if(a<=100*h+50*f+10*t)
+   {
+       printf("100s = %d\n",h);
+        printf("50s = %d\n",f);
+         printf("10s = %d\n",(a-100*h-50*f)/10);
+   }   
+   else
+   printf("Insufficient Balance");
+
+    
+    return 0;
+}
