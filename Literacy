@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+   int p=80000,pm=52,pw=42,lm=35,tl=48,til=52;
+   int Lm=p*lm/100;
+   int ilm=p*pm/100-Lm;
+   printf("Illeterate Men = %d\n",ilm);
+
+int ilw=p*til/100-ilm;
+   printf("Illeterate Women = %d\n",ilw);
+    return 0;
+}
